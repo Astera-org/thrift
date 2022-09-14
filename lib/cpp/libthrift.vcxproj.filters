@@ -48,9 +48,6 @@
     <ClCompile Include="src\thrift\transport\THttpServer.cpp">
       <Filter>transport</Filter>
     </ClCompile>
-    <ClCompile Include="src\thrift\transport\TSSLSocket.cpp">
-      <Filter>transport</Filter>
-    </ClCompile>
     <ClCompile Include="src\thrift\transport\TTransportUtils.cpp">
       <Filter>transport</Filter>
     </ClCompile>

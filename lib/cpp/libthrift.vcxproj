@@ -67,7 +67,6 @@
     <ClCompile Include="src\thrift\transport\TSimpleFileTransport.cpp" />
     <ClCompile Include="src\thrift\transport\TFileTransport.cpp" />
     <ClCompile Include="src\thrift\transport\TSocket.cpp" />
-    <ClCompile Include="src\thrift\transport\TSSLSocket.cpp" />
     <ClCompile Include="src\thrift\transport\TTransportException.cpp" />
     <ClCompile Include="src\thrift\transport\TTransportUtils.cpp" />
     <ClCompile Include="src\thrift\windows\GetTimeOfDay.cpp" />
@@ -348,8 +347,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>HAVE_CONFIG_H=1;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
+      <PreprocessorDefinitions>thrift_EXPORTS;HAVE_CONFIG_H=1;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\code\boost\;C:\Program Files\OpenSSL-Win64\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
